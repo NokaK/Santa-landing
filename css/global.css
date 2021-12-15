@@ -39,3 +39,59 @@ table {
   border-spacing: 0;
 }
 /*# sourceMappingURL=global.css.map */
+
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'PT Serif', serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../hero-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero .content h1 {
+  font-size: 48px;
+  letter-spacing: 0.48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero .content p {
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.hero .content button {
+  width: fit-content;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  letter-spacing: -0.16px;
+  border: none;
+  padding: 13px 28px;
+  cursor: pointer;
+}
