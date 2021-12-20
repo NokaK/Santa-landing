@@ -39,16 +39,46 @@ table {
   border-spacing: 0;
 }
 
-<<<<<<< HEAD
-=======
+@font-face {
+  font-family: 'PT Serif Regular';
+  src: url("../assets/fonts/PTSerif-Regular.woff2") format("woff2"), url("../assets/fonts/PTSerif-Regular.woff") format("woff"), url("../assets/fonts/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Serif Bold';
+  src: url("../assets/fonts/PTSerif-Bold.woff2") format("woff2"), url("../assets/fonts/PTSerif-Bold.woff") format("woff"), url("../assets/fonts/PTSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../assets/fonts/OpenSans-Regular.woff2") format("woff2"), url("../assets/fonts/OpenSans-Regular.woff") format("woff"), url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("../assets/fonts/OpenSans-Bold.woff") format("woff"), url("../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 #menu-div {
+  height: 90%;
   display: none;
   background: #F5F5F5;
   position: absolute;
   top: 10%;
   right: 0;
-  height: 90%;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif Bold", serif;
   z-index: 455;
 }
 
@@ -85,7 +115,7 @@ table {
 #menu-div .container nav ul li a {
   text-decoration: none;
   color: black;
-  font-family: 'PT Serif Bold';
+  font-family: "PT Serif Bold";
 }
 
 #menu-div .container .social ul {
@@ -141,6 +171,10 @@ header .container .logos div img {
   cursor: pointer;
 }
 
+header .container .burger-menu {
+  position: relative;
+}
+
 header .container .burger-menu .icon button {
   background: none;
   border: 0;
@@ -149,5 +183,68 @@ header .container .burger-menu .icon button {
 }
 
 /* /HEADER */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'PT Serif', serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../hero-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero .wrapper {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.hero .wrapper .content h1 {
+  font-size: 48px;
+  letter-spacing: 0.48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero .wrapper .content p {
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.hero .wrapper .content button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  letter-spacing: -0.16px;
+  border: none;
+  padding: 13px 28px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=global.css.map */
->>>>>>> 71ead8caf907cec6c3eddaf70ccd62a02aa25b7d
