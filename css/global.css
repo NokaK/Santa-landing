@@ -39,9 +39,50 @@ table {
   border-spacing: 0;
 }
 
+.section-2 {
+  margin-top: 60px;
+}
+
+.section-2 .say-hi-block {
+  background-color: #354389;
+  opacity: 40%;
+}
+
+.section-2 .say-hi-block .text-say-hi {
+  padding: 20px 0 20px 84px;
+}
+
+.section-2 .say-hi-block .text-say-hi h2 {
+  font-family: 'PT Serif Bold';
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 0.48px;
+  line-height: 61px;
+  font-weight: 600;
+}
+
+.section-2 .say-hi-block .text-say-hi h3 {
+  font-family: 'PT Serif Bold';
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0.4px;
+  line-height: 61px;
+  font-weight: 600;
+}
+
+.section-2 .say-hi-block .text-say-hi p {
+  max-width: 661px;
+  width: 100%;
+  font-family: 'Open Sans Bold';
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: -0.36px;
+  line-height: 24px;
+}
+
 @font-face {
   font-family: 'PT Serif Regular';
-  src: url("PTSerif-Regular.woff2") format("woff2"), url("PTSerif-Regular.woff") format("woff"), url("PTSerif-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/PTSerif-Regular.woff2") format("woff2"), url("../assets/fonts/PTSerif-Regular.woff") format("woff"), url("../assets/fonts/PTSerif-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -49,7 +90,7 @@ table {
 
 @font-face {
   font-family: 'PT Serif Bold';
-  src: url("PTSerif-Bold.woff2") format("woff2"), url("PTSerif-Bold.woff") format("woff"), url("PTSerif-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/PTSerif-Bold.woff2") format("woff2"), url("../assets/fonts/PTSerif-Bold.woff") format("woff"), url("../assets/fonts/PTSerif-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -57,7 +98,7 @@ table {
 
 @font-face {
   font-family: 'Open Sans Regular';
-  src: url("OpenSans-Regular.woff2") format("woff2"), url("OpenSans-Regular.woff") format("woff"), url("OpenSans-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/OpenSans-Regular.woff2") format("woff2"), url("../assets/fonts/OpenSans-Regular.woff") format("woff"), url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -65,7 +106,7 @@ table {
 
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url("OpenSans-Bold.woff2") format("woff2"), url("OpenSans-Bold.woff") format("woff"), url("OpenSans-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("../assets/fonts/OpenSans-Bold.woff") format("woff"), url("../assets/fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
