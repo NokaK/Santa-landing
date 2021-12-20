@@ -1,9 +1,9 @@
 // PT Serif fonts
 @font-face {
     font-family: 'PT Serif Regular';
-    src: url('PTSerif-Regular.woff2') format('woff2'),
-        url('PTSerif-Regular.woff') format('woff'),
-        url('PTSerif-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/PTSerif-Regular.woff2') format('woff2'),
+        url('../assets/fonts/PTSerif-Regular.woff') format('woff'),
+        url('../assets/fonts/PTSerif-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -11,9 +11,9 @@
 
 @font-face {
     font-family: 'PT Serif Bold';
-    src: url('PTSerif-Bold.woff2') format('woff2'),
-        url('PTSerif-Bold.woff') format('woff'),
-        url('PTSerif-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/PTSerif-Bold.woff2') format('woff2'),
+        url('../assets/fonts/PTSerif-Bold.woff') format('woff'),
+        url('../assets/fonts/PTSerif-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -21,9 +21,9 @@
 // Open Sans Fonts
 @font-face {
     font-family: 'Open Sans Regular';
-    src: url('OpenSans-Regular.woff2') format('woff2'),
-        url('OpenSans-Regular.woff') format('woff'),
-        url('OpenSans-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../assets/fonts/OpenSans-Regular.woff') format('woff'),
+        url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -31,9 +31,9 @@
 
 @font-face {
     font-family: 'Open Sans Bold';
-    src: url('OpenSans-Bold.woff2') format('woff2'),
-        url('OpenSans-Bold.woff') format('woff'),
-        url('OpenSans-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../assets/fonts/OpenSans-Bold.woff') format('woff'),
+        url('../assets/fonts/OpenSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

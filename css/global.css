@@ -39,35 +39,112 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: 'PT Serif Regular';
-  src: url("PTSerif-Regular.woff2") format("woff2"), url("PTSerif-Regular.woff") format("woff"), url("PTSerif-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+#menu-div {
+  display: none;
+  background: #F5F5F5;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: 90%;
+  font-family: 'PT Serif', serif;
+  z-index: 455;
 }
 
-@font-face {
+#menu-div .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#menu-div .container nav {
+  height: 90%;
+}
+
+#menu-div .container nav ul {
+  height: 100%;
+}
+
+#menu-div .container nav ul li {
+  height: 20%;
+  width: 50%;
+}
+
+#menu-div .container nav ul li a {
+  text-decoration: none;
+  color: black;
   font-family: 'PT Serif Bold';
-  src: url("PTSerif-Bold.woff2") format("woff2"), url("PTSerif-Bold.woff") format("woff"), url("PTSerif-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
 }
 
-@font-face {
-  font-family: 'Open Sans Regular';
-  src: url("OpenSans-Regular.woff2") format("woff2"), url("OpenSans-Regular.woff") format("woff"), url("OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+#menu-div .container .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@font-face {
-  font-family: 'Open Sans Bold';
-  src: url("OpenSans-Bold.woff2") format("woff2"), url("OpenSans-Bold.woff") format("woff"), url("OpenSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+#menu-div .container .social ul li {
+  margin: 0 5%;
 }
+
+/* HEADER */
+header {
+  height: 140px;
+  background: #131931;
+}
+
+header .container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logos div {
+  padding: 0 10%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .container .logos div img {
+  cursor: pointer;
+}
+
+header .container .burger-menu .icon button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: white;
+}
+
+/* /HEADER */
 /*# sourceMappingURL=global.css.map */
