@@ -76,7 +76,7 @@ body{
 
     .hero {
         width: 100%;
-        min-height: 100vh;
+        min-height: 90vh;
         font-family: 'PT Serif', serif;
         position: relative;
         display: flex;
@@ -89,7 +89,7 @@ body{
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(../hero-background.png);
+        background-image: url(../assets/images/hero/hero.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -107,14 +107,8 @@ body{
                     font-size: 48px;
                     letter-spacing: 0.48px;
                     font-weight: bold;
-                    margin-bottom: 15px;
-                }
-            
-                p {
-                    font-size: 30px;
-                    letter-spacing: 0.3px;
-                    margin-bottom: 30px;
-                    font-weight: bold;
+                    margin-bottom: 70px;
+                    color: #fff;
                 }
             
                 button {
@@ -226,9 +220,42 @@ body{
             }
         }
     }
-
-
-    // section 5 / holiday
+    // Section 5 / Bad Habbits
+    .bad-habbits{
+        padding-bottom: 2%;
+        margin: 70px 0;
+        .bad-habbits-container{
+            width: 90%;
+            margin: 0 auto;
+            @include flex-justify('');
+            flex-direction: row-reverse;
+            .text{
+                color: $colorWhite;
+                width: 60%;
+                text-align: right;
+                h2{
+                    @include ff-fs-fw ($firago-semibold, 40px, 500);
+                }
+                p{
+                    @include ff-fs-fw ($firago-reg, 18px, 100);
+                    line-height: 25px;
+                }
+                h2 {
+                    margin-bottom: 3%
+                }
+            }
+            .button-container{
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                button{
+                    @include buttonStyles();
+                }
+            }
+        }
+    }
+    // section 6 / holiday
     .holiday{
         background-color: $opacity0_4;
         @include flex-justify(center);
@@ -255,7 +282,7 @@ body{
         }
     }
 
-    // section 6 / intereesting events
+    // section 7 / intereesting events
     .interest-events{
         @include flex-justify(center);
         .event-div{
@@ -295,6 +322,39 @@ body{
                         cursor: pointer;
                         color: $colorWhite;
                     }
+                }
+            }
+        }
+    }
+    // footer
+    footer{
+        background: $opacity0_4;
+        text-align: center;
+        background-image: url("../assets/images/footer/neon\ tree\ 2.png");
+        min-height: 300px;
+        padding: 30px 0;
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h3{
+            color: $colorWhite;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .socials{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+
+            .item{
+                display: flex;
+                margin: 10px 0;
+                color: $colorWhite;
+
+                i {
+                    margin-right: 10px;
                 }
             }
         }
