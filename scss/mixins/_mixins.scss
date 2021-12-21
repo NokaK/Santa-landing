@@ -1,0 +1,35 @@
+@mixin flex-justify($justify) {
+    display: flex;
+    justify-content: $justify;
+}
+@mixin flex-align($align) {
+    display: flex;
+    align-items: $align;
+}
+@mixin flex-justify-align($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin fl-dc-jc-ai ($flexdirection, $justify, $align) {
+    display: flex;
+    flex-direction: $flexdirection;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin ff-fs-fw ($family, $size, $weight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
+@mixin buttonStyles () {
+    width: 234px;
+    height: 62px;
+    font-size: 20px;
+    font-family: $firago-semibold;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #ffffffb4;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}

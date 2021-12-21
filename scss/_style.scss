@@ -1,0 +1,230 @@
+
+
+// MODAL
+#menu-div{
+    height: 90%;
+    display: none;
+    background: #F5F5F5;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    font-family: $pt-bold, serif;
+    z-index: 455;
+    .container{
+        height: 100%;
+        @include flex-justify(space-between);
+        flex-direction: column;
+        padding: 5%;
+        box-sizing: border-box;
+        nav{
+            height: 90%;
+            ul{
+                height: 100%;
+                li{
+                    height: 20%;
+                    width: 50%;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-family: $pt-bold;
+                    }
+                }
+            }
+        }
+        .social ul{
+            @include flex-justify(center);
+            li{
+                margin: 0 5%;
+            }
+        }
+    }
+  }
+/* HEADER */
+header{
+    height: 140px;
+    background: #131931;
+    .container{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        @include flex-justify-align(space-between, center);
+        .logos{
+            @include flex-align(center);
+            div{
+                padding: 0 10%;
+                box-sizing: border-box;
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+        .burger-menu{
+            position: relative;
+            .icon{
+                button{
+                    background: none;
+                    border: 0;
+                    cursor: pointer;
+                    color: $colorWhite;
+                }
+            }
+        }
+    }
+}
+/* /HEADER */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'PT Serif', serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../hero-background.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 1100px;
+        padding: 0 40px;
+        margin: 0 auto;
+  
+        .content {
+            h1 {
+                font-size: 48px;
+                letter-spacing: 0.48px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+        
+            p {
+                font-size: 30px;
+                letter-spacing: 0.3px;
+                margin-bottom: 30px;
+                font-weight: bold;
+            }
+        
+            button {
+                @include buttonStyles();
+            }
+        }
+    }
+}
+
+// section 2 styles
+.section-2{
+    margin-top: 60px;
+    .say-hi-block{
+        background-color: #354389;
+        opacity: 40%;
+        .text-say-hi{
+            padding: 20px 0 20px 84px;
+            h2{
+                font-family: 'PT Serif Bold';
+                color: $colorWhite;
+                font-size: 48px;
+                letter-spacing: 0.48px;
+                line-height: 61px;
+                font-weight: 600;
+            }
+            h3{
+                font-family: 'PT Serif Bold';
+                color: $colorWhite;
+                font-size: 40px;
+                letter-spacing: 0.4px;
+                line-height: 61px;
+                font-weight: 600;
+            }
+            p{
+                max-width: 661px;
+                width: 100%;
+                font-family: 'Open Sans Bold';
+                color: $colorWhite;
+                font-size: 18px;
+                letter-spacing: -0.36px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+//  My Cyber Profile Section
+.cyber-profile {
+    background-color: $darkbluebg;
+    color: $colorWhite;
+    padding: 38px 0;
+    @include fl-dc-jc-ai (column, center, center);
+    h2{
+        @include ff-fs-fw ($firago-semibold, 40px, 500);
+    }
+    .profile{
+        max-width: 650px;
+        width: 100%;
+        margin: 51px auto;
+        ul {
+            li {
+                @include ff-fs-fw ($firago-reg, 18px, 300);
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                .list-effect {
+                    margin-right: 10px;
+                    font-family: $bpg-glaho;
+                    text-shadow: 0 0 10px #fff;
+                    font-size: 16px !important; 
+                }
+            }
+        }
+    }
+}
+// Ask me anything section
+.ask-me-anything{
+    padding-bottom: 2%;
+    background: $darkbluebg;
+    .ask-me-container{
+        width: 90%;
+        margin: 0 auto;
+        @include flex-justify('');
+        .text{
+            color: $colorWhite;
+            width: 60%;
+            h2{
+                @include ff-fs-fw ($firago-semibold, 40px, 500);
+            }
+            h3{
+                @include ff-fs-fw ($firago-semibold, 27px, 100);
+            }
+            h4{
+                @include ff-fs-fw ($bpg-glaho, 21px, 100);
+                text-shadow: 0 0 10px #fff;
+            }
+            p{
+                @include ff-fs-fw ($firago-reg, 18px, 100);
+                line-height: 25px;
+            }
+            h2, h3, h4{
+                margin-bottom: 3%
+            }
+        }
+        .button-container{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            button{
+                @include buttonStyles();
+            }
+        }
+    }
+}
