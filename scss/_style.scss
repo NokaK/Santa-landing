@@ -1,5 +1,4 @@
-@import './variables/variables';
-@import './mixins/_mixins.scss';
+
 
 // MODAL
 #menu-div{
@@ -66,10 +65,131 @@ header{
                     background: none;
                     border: 0;
                     cursor: pointer;
-                    color: white;
+                    color: $colorWhite;
                 }
             }
         }
     }
 }
 /* /HEADER */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'PT Serif', serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../hero-background.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-width: 1100px;
+        padding: 0 40px;
+        margin: 0 auto;
+  
+        .content {
+            h1 {
+                font-size: 48px;
+                letter-spacing: 0.48px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+        
+            p {
+                font-size: 30px;
+                letter-spacing: 0.3px;
+                margin-bottom: 30px;
+                font-weight: bold;
+            }
+        
+            button {
+                width: fit-content;
+                background-color: black;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                color: $colorWhite;
+                letter-spacing: -0.16px;
+                border: none;
+                padding: 13px 28px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// section 2 styles
+.section-2{
+    margin-top: 60px;
+    .say-hi-block{
+        background-color: #354389;
+        opacity: 40%;
+        .text-say-hi{
+            padding: 20px 0 20px 84px;
+            h2{
+                font-family: 'PT Serif Bold';
+                color: $colorWhite;
+                font-size: 48px;
+                letter-spacing: 0.48px;
+                line-height: 61px;
+                font-weight: 600;
+            }
+            h3{
+                font-family: 'PT Serif Bold';
+                color: $colorWhite;
+                font-size: 40px;
+                letter-spacing: 0.4px;
+                line-height: 61px;
+                font-weight: 600;
+            }
+            p{
+                max-width: 661px;
+                width: 100%;
+                font-family: 'Open Sans Bold';
+                color: $colorWhite;
+                font-size: 18px;
+                letter-spacing: -0.36px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+//  My Cyber Profile Section
+.cyber-profile {
+    background-color: $darkbluebg;
+    color: $colorWhite;
+    padding: 38px 0;
+    @include fl-dc-jc-ai (column, center, center);
+    h2{
+        @include ff-fs-fw ($firago-semibold, 40px, 500);
+    }
+    .profile{
+        max-width: 650px;
+        width: 100%;
+        margin: 51px auto;
+        ul {
+            li {
+                @include ff-fs-fw ($firago-reg, 18px, 300);
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                .list-effect {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

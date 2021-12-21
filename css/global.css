@@ -39,14 +39,62 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'PT Serif Regular';
+  src: url("../assets/fonts/PTSerif-Regular.woff2") format("woff2"), url("../assets/fonts/PTSerif-Regular.woff") format("woff"), url("../assets/fonts/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Serif Bold';
+  src: url("../assets/fonts/PTSerif-Bold.woff2") format("woff2"), url("../assets/fonts/PTSerif-Bold.woff") format("woff"), url("../assets/fonts/PTSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../assets/fonts/OpenSans-Regular.woff2") format("woff2"), url("../assets/fonts/OpenSans-Regular.woff") format("woff"), url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("../assets/fonts/OpenSans-Bold.woff") format("woff"), url("../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraGO Regular';
+  src: url("../assets/fonts/FiraGO-Regular.woff2") format("woff2"), url("../assets/fonts/FiraGO-Regular.woff") format("woff"), url("../assets/fonts/FiraGO-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraGO SemiBold';
+  src: url("../assets/fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../assets/fonts/FiraGO-SemiBold.woff") format("woff"), url("../assets/fonts/FiraGO-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 #menu-div {
+  height: 90%;
   display: none;
   background: #F5F5F5;
   position: absolute;
   top: 10%;
   right: 0;
-  height: 90%;
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif Bold", serif;
   z-index: 455;
 }
 
@@ -83,7 +131,7 @@ table {
 #menu-div .container nav ul li a {
   text-decoration: none;
   color: black;
-  font-family: 'PT Serif Bold';
+  font-family: "PT Serif Bold";
 }
 
 #menu-div .container .social ul {
@@ -139,12 +187,166 @@ header .container .logos div img {
   cursor: pointer;
 }
 
+header .container .burger-menu {
+  position: relative;
+}
+
 header .container .burger-menu .icon button {
   background: none;
   border: 0;
   cursor: pointer;
-  color: white;
+  color: #ffffff;
 }
 
 /* /HEADER */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'PT Serif', serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../hero-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero .wrapper {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.hero .wrapper .content h1 {
+  font-size: 48px;
+  letter-spacing: 0.48px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero .wrapper .content p {
+  font-size: 30px;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.hero .wrapper .content button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: -0.16px;
+  border: none;
+  padding: 13px 28px;
+  cursor: pointer;
+}
+
+.section-2 {
+  margin-top: 60px;
+}
+
+.section-2 .say-hi-block {
+  background-color: #354389;
+  opacity: 40%;
+}
+
+.section-2 .say-hi-block .text-say-hi {
+  padding: 20px 0 20px 84px;
+}
+
+.section-2 .say-hi-block .text-say-hi h2 {
+  font-family: 'PT Serif Bold';
+  color: #ffffff;
+  font-size: 48px;
+  letter-spacing: 0.48px;
+  line-height: 61px;
+  font-weight: 600;
+}
+
+.section-2 .say-hi-block .text-say-hi h3 {
+  font-family: 'PT Serif Bold';
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0.4px;
+  line-height: 61px;
+  font-weight: 600;
+}
+
+.section-2 .say-hi-block .text-say-hi p {
+  max-width: 661px;
+  width: 100%;
+  font-family: 'Open Sans Bold';
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: -0.36px;
+  line-height: 24px;
+}
+
+.cyber-profile {
+  background-color: #131931;
+  color: #ffffff;
+  padding: 38px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cyber-profile h2 {
+  font-family: "FiraGO SemiBold";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cyber-profile .profile {
+  max-width: 650px;
+  width: 100%;
+  margin: 51px auto;
+}
+
+.cyber-profile .profile ul li {
+  font-family: "FiraGO Regular";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.cyber-profile .profile ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.cyber-profile .profile ul li .list-effect {
+  margin-right: 20px;
+}
 /*# sourceMappingURL=global.css.map */

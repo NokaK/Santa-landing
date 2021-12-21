@@ -11,3 +11,14 @@
     justify-content: $justify;
     align-items: $align;
 }
+@mixin fl-dc-jc-ai ($flexdirection, $justify, $align) {
+    display: flex;
+    flex-direction: $flexdirection;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin ff-fs-fw ($family, $size, $weight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
