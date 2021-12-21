@@ -39,6 +39,59 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'PT Serif Regular';
+  src: url("../assets/fonts/PTSerif-Regular.woff2") format("woff2"), url("../assets/fonts/PTSerif-Regular.woff") format("woff"), url("../assets/fonts/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PT Serif Bold';
+  src: url("../assets/fonts/PTSerif-Bold.woff2") format("woff2"), url("../assets/fonts/PTSerif-Bold.woff") format("woff"), url("../assets/fonts/PTSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../assets/fonts/OpenSans-Regular.woff2") format("woff2"), url("../assets/fonts/OpenSans-Regular.woff") format("woff"), url("../assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("../assets/fonts/OpenSans-Bold.woff") format("woff"), url("../assets/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraGO Regular';
+  src: url("../assets/fonts/FiraGO-Regular.woff2") format("woff2"), url("../assets/fonts/FiraGO-Regular.woff") format("woff"), url("../assets/fonts/FiraGO-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraGO SemiBold';
+  src: url("../assets/fonts/FiraGO-SemiBold.woff2") format("woff2"), url("../assets/fonts/FiraGO-SemiBold.woff") format("woff"), url("../assets/fonts/FiraGO-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BPG Glaho WEB Caps';
+  src: url("../assets/fonts/bpg-glaho-web-caps-webfont.woff2") format("woff2"), url("../assets/fonts/bpg-glaho-web-caps-webfont.woff") format("woff"), url("../assets/fonts/bpg-glaho-web-caps-webfont.ttf") format("truetype");
+}
+
 #menu-div {
   height: 90%;
   display: none;
@@ -203,16 +256,15 @@ header .container .burger-menu .icon button {
 }
 
 .hero .wrapper .content button {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  color: #ffffff;
-  letter-spacing: -0.16px;
-  border: none;
-  padding: 13px 28px;
+  width: 234px;
+  height: 62px;
+  font-size: 20px;
+  font-family: "FiraGO SemiBold";
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
+          box-shadow: 0px 0px 20px #ffffffb4;
+  border: 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -255,5 +307,130 @@ header .container .burger-menu .icon button {
   font-size: 18px;
   letter-spacing: -0.36px;
   line-height: 24px;
+}
+
+.cyber-profile {
+  background-color: #131931;
+  color: #ffffff;
+  padding: 38px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cyber-profile h2 {
+  font-family: "FiraGO SemiBold";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cyber-profile .profile {
+  max-width: 650px;
+  width: 100%;
+  margin: 51px auto;
+}
+
+.cyber-profile .profile ul li {
+  font-family: "FiraGO Regular";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.cyber-profile .profile ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.cyber-profile .profile ul li .list-effect {
+  margin-right: 10px;
+  font-family: "BPG Glaho WEB Caps";
+  text-shadow: 0 0 10px #fff;
+  font-size: 16px !important;
+}
+
+.ask-me-anything {
+  padding-bottom: 2%;
+  background: #131931;
+}
+
+.ask-me-anything .ask-me-container {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: "";
+      -ms-flex-pack: "";
+          justify-content: "";
+}
+
+.ask-me-anything .ask-me-container .text {
+  color: #ffffff;
+  width: 60%;
+}
+
+.ask-me-anything .ask-me-container .text h2 {
+  font-family: "FiraGO SemiBold";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.ask-me-anything .ask-me-container .text h3 {
+  font-family: "FiraGO SemiBold";
+  font-size: 27px;
+  font-weight: 100;
+}
+
+.ask-me-anything .ask-me-container .text h4 {
+  font-family: "BPG Glaho WEB Caps";
+  font-size: 21px;
+  font-weight: 100;
+  text-shadow: 0 0 10px #fff;
+}
+
+.ask-me-anything .ask-me-container .text p {
+  font-family: "FiraGO Regular";
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+.ask-me-anything .ask-me-container .text h2, .ask-me-anything .ask-me-container .text h3, .ask-me-anything .ask-me-container .text h4 {
+  margin-bottom: 3%;
+}
+
+.ask-me-anything .ask-me-container .button-container {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ask-me-anything .ask-me-container .button-container button {
+  width: 234px;
+  height: 62px;
+  font-size: 20px;
+  font-family: "FiraGO SemiBold";
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
+          box-shadow: 0px 0px 20px #ffffffb4;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=global.css.map */

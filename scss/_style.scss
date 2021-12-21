@@ -117,15 +117,7 @@ header{
             }
         
             button {
-                width: fit-content;
-                background-color: black;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: bold;
-                color: $colorWhite;
-                letter-spacing: -0.16px;
-                border: none;
-                padding: 13px 28px;
-                cursor: pointer;
+                @include buttonStyles();
             }
         }
     }
@@ -163,6 +155,75 @@ header{
                 font-size: 18px;
                 letter-spacing: -0.36px;
                 line-height: 24px;
+            }
+        }
+    }
+}
+//  My Cyber Profile Section
+.cyber-profile {
+    background-color: $darkbluebg;
+    color: $colorWhite;
+    padding: 38px 0;
+    @include fl-dc-jc-ai (column, center, center);
+    h2{
+        @include ff-fs-fw ($firago-semibold, 40px, 500);
+    }
+    .profile{
+        max-width: 650px;
+        width: 100%;
+        margin: 51px auto;
+        ul {
+            li {
+                @include ff-fs-fw ($firago-reg, 18px, 300);
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                .list-effect {
+                    margin-right: 10px;
+                    font-family: $bpg-glaho;
+                    text-shadow: 0 0 10px #fff;
+                    font-size: 16px !important; 
+                }
+            }
+        }
+    }
+}
+// Ask me anything section
+.ask-me-anything{
+    padding-bottom: 2%;
+    background: $darkbluebg;
+    .ask-me-container{
+        width: 90%;
+        margin: 0 auto;
+        @include flex-justify('');
+        .text{
+            color: $colorWhite;
+            width: 60%;
+            h2{
+                @include ff-fs-fw ($firago-semibold, 40px, 500);
+            }
+            h3{
+                @include ff-fs-fw ($firago-semibold, 27px, 100);
+            }
+            h4{
+                @include ff-fs-fw ($bpg-glaho, 21px, 100);
+                text-shadow: 0 0 10px #fff;
+            }
+            p{
+                @include ff-fs-fw ($firago-reg, 18px, 100);
+                line-height: 25px;
+            }
+            h2, h3, h4{
+                margin-bottom: 3%
+            }
+        }
+        .button-container{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            button{
+                @include buttonStyles();
             }
         }
     }
