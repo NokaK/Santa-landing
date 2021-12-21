@@ -57,10 +57,12 @@
     font-style: normal;
     font-display: swap;
 }
-
-
-
-
+@font-face {
+    font-family: 'BPG Glaho WEB Caps';
+    src: url('../assets/fonts/bpg-glaho-web-caps-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/bpg-glaho-web-caps-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../assets/fonts/bpg-glaho-web-caps-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+}
 
 
 

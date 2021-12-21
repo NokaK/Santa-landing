@@ -87,6 +87,11 @@ table {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'BPG Glaho WEB Caps';
+  src: url("../assets/fonts/bpg-glaho-web-caps-webfont.woff2") format("woff2"), url("../assets/fonts/bpg-glaho-web-caps-webfont.woff") format("woff"), url("../assets/fonts/bpg-glaho-web-caps-webfont.ttf") format("truetype");
+}
+
 #menu-div {
   height: 90%;
   display: none;
@@ -347,6 +352,9 @@ header .container .burger-menu .icon button {
 }
 
 .cyber-profile .profile ul li .list-effect {
-  margin-right: 20px;
+  margin-right: 10px;
+  font-family: "BPG Glaho WEB Caps";
+  text-shadow: 0 0 10px #fff;
+  font-size: 16px !important;
 }
 /*# sourceMappingURL=global.css.map */
