@@ -204,6 +204,7 @@ body header .container .logos div img {
 
 body header .container .burger-menu {
   position: relative;
+  display: none;
 }
 
 body header .container .burger-menu .icon button {
