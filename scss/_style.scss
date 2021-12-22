@@ -99,10 +99,11 @@ body{
         .wrapper {
             width: 100%;
             max-width: 1100px;
-            padding: 0 40px;
             margin: 0 auto;
     
             .content {
+                padding: 0 40px;
+                
                 h1 {
                     font-size: 48px;
                     letter-spacing: 0.48px;
@@ -328,14 +329,22 @@ body{
     }
     // footer
     footer{
-        background: $opacity0_4;
         text-align: center;
-        background-image: url("../assets/images/footer/neon\ tree\ 2.png");
-        min-height: 300px;
         padding: 30px 0;
-        background-position: left;
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: relative;
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            background: $opacity0_4;
+
+            img {
+                width: 100%;
+            }
+        }
 
         h3{
             color: $colorWhite;
