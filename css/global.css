@@ -39,6 +39,12 @@ table {
   border-spacing: 0;
 }
 
+.container-m {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @font-face {
   font-family: 'PT Serif Regular';
   src: url("../assets/fonts/PTSerif-Regular.woff2") format("woff2"), url("../assets/fonts/PTSerif-Regular.woff") format("woff"), url("../assets/fonts/PTSerif-Regular.ttf") format("truetype");
@@ -273,8 +279,15 @@ body .section-2 {
   margin-top: 60px;
 }
 
-body .section-2 .say-hi-block {
+body .section-2 .line-first {
+  position: absolute;
+  right: 0;
+  margin-top: 30px;
+}
+
+body .section-2 .hello-bg {
   background-color: rgba(53, 67, 137, 0.4);
+  width: 100%;
 }
 
 body .section-2 .say-hi-block .text-say-hi {
@@ -310,6 +323,7 @@ body .section-2 .say-hi-block .text-say-hi p {
 }
 
 body .cyber-profile {
+  position: relative;
   color: #ffffff;
   padding: 38px 0;
   display: -webkit-box;
@@ -333,10 +347,23 @@ body .cyber-profile h2 {
   font-weight: 500;
 }
 
+body .cyber-profile .line-profile-left {
+  position: absolute;
+  left: 0;
+  bottom: -210px;
+}
+
 body .cyber-profile .profile {
   max-width: 650px;
   width: 100%;
   margin: 51px auto;
+  position: relative;
+}
+
+body .cyber-profile .profile .line-profile {
+  position: absolute;
+  right: -55px;
+  top: -40px;
 }
 
 body .cyber-profile .profile ul li {
@@ -436,6 +463,14 @@ body .ask-me-anything .ask-me-container .button-container button {
 body .bad-habbits {
   padding-bottom: 2%;
   margin: 70px 0;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+body .bad-habbits .line-badhabits {
+  position: absolute;
+  bottom: -50px;
+  right: 400px;
 }
 
 body .bad-habbits .bad-habbits-container {
@@ -505,12 +540,26 @@ body .bad-habbits .bad-habbits-container .button-container button {
 
 body .holiday {
   background-color: rgba(53, 67, 137, 0.4);
+  position: relative;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+body .holiday .line-holiday-right {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+}
+
+body .holiday .line-holiday-left {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
 }
 
 body .holiday .hoiday-div {
@@ -621,6 +670,7 @@ body footer {
   text-align: center;
   padding: 30px 0;
   position: relative;
+  font-family: "FiraGO Regular";
 }
 
 body footer .background-overlay {

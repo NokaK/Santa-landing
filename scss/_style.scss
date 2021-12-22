@@ -122,8 +122,16 @@ body{
     // section 2 styles
     .section-2{
         margin-top: 60px;
-        .say-hi-block{
+        .line-first{
+            position: absolute;
+            right: 0;
+            margin-top: 30px;
+        }
+        .hello-bg {
             background-color: $opacity0_4;
+            width: 100%;
+          }
+        .say-hi-block{
             .text-say-hi{
                 padding: 20px 0 50px 84px;
                 h2{
@@ -156,16 +164,28 @@ body{
     }
     //  My Cyber Profile Section
     .cyber-profile {
+        position: relative;
         color: $colorWhite;
         padding: 38px 0;
         @include fl-dc-jc-ai (column, center, center);
         h2{
             @include ff-fs-fw ($firago-semibold, 40px, 500);
         }
+        .line-profile-left{
+            position: absolute;
+            left: 0;
+            bottom: -210px;
+        }
         .profile{
             max-width: 650px;
             width: 100%;
             margin: 51px auto;
+            position: relative;
+            .line-profile{
+                position: absolute;
+                right: -55px;
+                top: -40px;
+            }
             ul {
                 li {
                     @include ff-fs-fw ($firago-reg, 18px, 300);
@@ -225,6 +245,13 @@ body{
     .bad-habbits{
         padding-bottom: 2%;
         margin: 70px 0;
+        position: relative;
+        padding-bottom: 50px;
+        .line-badhabits{
+            position: absolute;
+            bottom: -50px;
+            right: 400px;
+        }
         .bad-habbits-container{
             width: 90%;
             margin: 0 auto;
@@ -259,7 +286,19 @@ body{
     // section 6 / holiday
     .holiday{
         background-color: $opacity0_4;
+        position: relative;
+        padding-bottom: 30px;
         @include flex-justify(center);
+        .line-holiday-right{
+            position: absolute;
+            right: 0;
+            bottom: 60px;
+        }
+        .line-holiday-left {
+            position: absolute;
+            left: 0;
+            bottom: 60px;
+        }
         .hoiday-div{
             padding: 70px 0;
             @include flex-justify(center);
