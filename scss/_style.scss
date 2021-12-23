@@ -3,6 +3,20 @@
 // MODAL
 body{
     background-color: $darkbluebg;
+    #snow{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 10;
+        .snowflake {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(white, white) no-repeat;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 10px white);
+        }
+    }
     #menu-div{
         height: 90%;
         display: none;
@@ -61,6 +75,7 @@ body{
             }
             .burger-menu{
                 position: relative;
+                display: none;
                 .icon{
                     button{
                         background: none;
@@ -76,7 +91,7 @@ body{
 
     .hero {
         width: 100%;
-        min-height: 100vh;
+        height: 568px;
         font-family: 'PT Serif', serif;
         position: relative;
         display: flex;
@@ -89,7 +104,7 @@ body{
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url(../hero-background.png);
+        background-image: url(../assets/images/hero/hero.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -98,23 +113,17 @@ body{
 
         .wrapper {
             width: 100%;
-            max-width: 1100px;
-            padding: 0 40px;
+            max-width: 1300px;
             margin: 0 auto;
-    
             .content {
+                // padding: 0 40px;
+                
                 h1 {
                     font-size: 48px;
                     letter-spacing: 0.48px;
                     font-weight: bold;
-                    margin-bottom: 15px;
-                }
-            
-                p {
-                    font-size: 30px;
-                    letter-spacing: 0.3px;
-                    margin-bottom: 30px;
-                    font-weight: bold;
+                    margin-bottom: 70px;
+                    color: #fff;
                 }
             
                 button {
@@ -127,10 +136,18 @@ body{
     // section 2 styles
     .section-2{
         margin-top: 60px;
-        .say-hi-block{
+        .line-first{
+            position: absolute;
+            right: 0;
+            margin-top: 30px;
+        }
+        .hello-bg {
             background-color: $opacity0_4;
+            width: 100%;
+          }
+        .say-hi-block{
             .text-say-hi{
-                padding: 20px 0 50px 84px;
+                padding: 20px 0 50px 0;
                 h2{
                     font-family: $firago-semibold;
                     color: $colorWhite;
@@ -161,16 +178,28 @@ body{
     }
     //  My Cyber Profile Section
     .cyber-profile {
+        position: relative;
         color: $colorWhite;
         padding: 38px 0;
         @include fl-dc-jc-ai (column, center, center);
         h2{
             @include ff-fs-fw ($firago-semibold, 40px, 500);
         }
+        .line-profile-left{
+            position: absolute;
+            left: 0;
+            bottom: -210px;
+        }
         .profile{
             max-width: 650px;
             width: 100%;
             margin: 51px auto;
+            position: relative;
+            .line-profile{
+                position: absolute;
+                right: -55px;
+                top: -40px;
+            }
             ul {
                 li {
                     @include ff-fs-fw ($firago-reg, 18px, 300);
@@ -191,9 +220,7 @@ body{
     .ask-me-anything{
         padding-bottom: 2%;
         .ask-me-container{
-            width: 90%;
-            margin: 0 auto;
-            @include flex-justify('');
+            @include flex-justify(space-between);
             .text{
                 color: $colorWhite;
                 width: 60%;
@@ -226,20 +253,84 @@ body{
             }
         }
     }
-
-
-    // section 5 / holiday
+    // Section 5 / Bad Habbits
+    .bad-habbits{
+        padding-bottom: 2%;
+        margin: 70px 0;
+        position: relative;
+        padding-bottom: 50px;
+        .line-badhabits{
+            position: absolute;
+            bottom: -50px;
+            right: 400px;
+        }
+        .bad-habbits-container{
+            margin: 0 auto;
+            @include flex-justify('');
+            flex-direction: row-reverse;
+            .text{
+                color: $colorWhite;
+                width: 60%;
+                text-align: right;
+                h2{
+                    @include ff-fs-fw ($firago-semibold, 40px, 500);
+                }
+                p{
+                    @include ff-fs-fw ($firago-reg, 18px, 100);
+                    line-height: 25px;
+                }
+                h2 {
+                    margin-bottom: 3%
+                }
+            }
+        }
+    }
+    // section 6 / holiday
     .holiday{
+        width: 100%;
         background-color: $opacity0_4;
+        position: relative;
+        padding-bottom: 30px;
         @include flex-justify(center);
-        .hoiday-div{
-            padding: 70px 0;
-            @include flex-justify(center);
-            flex-direction: column;
+        flex-direction: column;
+        h6{
+            width: 80%;
+            margin: 0 auto;
+            font-family: $firago-semibold;
+            color: $colorWhite;
+            font-size: 30px;
+            line-height: 36px;
+            letter-spacing: -0.6px;
+            margin-bottom: 50px;
             text-align: center;
-            max-width: 818px;
+        }
+        .cont{
             width: 100%;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 33%;
+                img{
+                    width: 100%
+                }
+            }
+            .button-container{
+                display: flex;
+                justify-content: center;
+                align-self: flex-start;
+                button{
+                    @include buttonStyles();
+                }
+            }
+            .line-holiday-left, .line-holiday-right{
+                margin-top: 20px;
+            }
+        }
+        .hoiday-div{
+            padding: 70px 0 30px 0;
             h6{
+                max-width: 818px;
+                width: 100%;
                 font-family: $firago-semibold;
                 color: $colorWhite;
                 font-size: 30px;
@@ -247,15 +338,10 @@ body{
                 letter-spacing: -0.6px;
                 margin-bottom: 50px;
             }
-            .button-container{
-                button{
-                    @include buttonStyles();
-                }
-            }
         }
     }
 
-    // section 6 / intereesting events
+    // section 7 / intereesting events
     .interest-events{
         @include flex-justify(center);
         .event-div{
@@ -295,6 +381,48 @@ body{
                         cursor: pointer;
                         color: $colorWhite;
                     }
+                }
+            }
+        }
+    }
+    // footer
+    footer{
+        text-align: center;
+        padding: 30px 0;
+        position: relative;
+        font-family: $firago-reg;
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            background: $opacity0_4;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h3{
+            color: $colorWhite;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .socials{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+
+            .item{
+                display: flex;
+                margin: 10px 0;
+                color: $colorWhite;
+
+                i {
+                    margin-right: 10px;
                 }
             }
         }
