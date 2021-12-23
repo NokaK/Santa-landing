@@ -216,7 +216,7 @@ body header .container .burger-menu .icon button {
 
 body .hero {
   width: 100%;
-  min-height: 90vh;
+  height: 568px;
   font-family: 'PT Serif', serif;
   position: relative;
   display: -webkit-box;
@@ -246,12 +246,8 @@ body .hero .background {
 
 body .hero .wrapper {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto;
-}
-
-body .hero .wrapper .content {
-  padding: 0 40px;
 }
 
 body .hero .wrapper .content h1 {
@@ -292,7 +288,7 @@ body .section-2 .hello-bg {
 }
 
 body .section-2 .say-hi-block .text-say-hi {
-  padding: 20px 0 50px 84px;
+  padding: 20px 0 50px 0;
 }
 
 body .section-2 .say-hi-block .text-say-hi h2 {
@@ -389,14 +385,12 @@ body .ask-me-anything {
 }
 
 body .ask-me-anything .ask-me-container {
-  width: 90%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: "";
-      -ms-flex-pack: "";
-          justify-content: "";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .ask-me-anything .ask-me-container .text {
@@ -475,7 +469,6 @@ body .bad-habbits .line-badhabits {
 }
 
 body .bad-habbits .bad-habbits-container {
-  width: 90%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
