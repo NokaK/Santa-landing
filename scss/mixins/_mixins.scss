@@ -24,7 +24,8 @@
 }
 @mixin buttonStyles () {
     width: 234px;
-    height: 62px;
+    padding: 20px 0;
+    font-size: 16px;
     font-size: 20px;
     font-family: $firago-semibold;
     background: #FFFFFF 0% 0% no-repeat padding-box;
