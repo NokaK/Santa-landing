@@ -265,11 +265,18 @@ body .hero .wrapper .content button {
   font-size: 20px;
   font-family: "FiraGO SemiBold";
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
-          box-shadow: 0px 0px 20px #ffffffb4;
+  -webkit-box-shadow: 0px 0px 10px #ffffffb4;
+          box-shadow: 0px 0px 10px #ffffffb4;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .hero .wrapper .content button:hover {
+  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
+          box-shadow: 0px 0px 20px #ffffffb4;
 }
 
 body .section-2 {
@@ -448,11 +455,18 @@ body .ask-me-anything .ask-me-container .button-container button {
   font-size: 20px;
   font-family: "FiraGO SemiBold";
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
-          box-shadow: 0px 0px 20px #ffffffb4;
+  -webkit-box-shadow: 0px 0px 10px #ffffffb4;
+          box-shadow: 0px 0px 10px #ffffffb4;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .ask-me-anything .ask-me-container .button-container button:hover {
+  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
+          box-shadow: 0px 0px 20px #ffffffb4;
 }
 
 body .bad-habbits {
@@ -570,11 +584,18 @@ body .holiday .cont .button-container button {
   font-size: 20px;
   font-family: "FiraGO SemiBold";
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
-          box-shadow: 0px 0px 20px #ffffffb4;
+  -webkit-box-shadow: 0px 0px 10px #ffffffb4;
+          box-shadow: 0px 0px 10px #ffffffb4;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .holiday .cont .button-container button:hover {
+  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
+          box-shadow: 0px 0px 20px #ffffffb4;
 }
 
 body .holiday .cont .line-holiday-left, body .holiday .cont .line-holiday-right {
