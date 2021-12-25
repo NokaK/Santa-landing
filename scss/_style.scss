@@ -326,51 +326,54 @@ body{
             }
         }
     }
-
-    // section 7 / intereesting events
-    .interest-events{
-        @include flex-justify(center);
-        .event-div{
-            max-width: 667px;
-            width: 100%;
-            padding: 20px 0 40px 0;
-            @include flex-justify(center);
-            flex-direction: column;
-            text-align: center;
-            p{
-                font-family: $firago-semibold;
-                color: $colorWhite;
-                font-size: 16px;
-                letter-spacing: -0.16px;
-                margin-bottom: 21px;
-            }
-            .form-mail{
-                form{
-                    display: flex;
-                    justify-content: center;
-                    #email{
-                        outline: none;
-                        width: 368px;
-                        background-color: #EBEBEB;
-                        border: 1px solid #EBEBEB;
-                        color: black;
-                        padding-left: 15px;
-                        margin-right: 2%;
-                        border-radius: 4px;
-                    }
-                    .follow{
-                        width: 144px;
-                        height: 48px;
-                        background-color: transparent;
-                        border: 1px solid $colorWhite;
-                        border-radius: 4px;
-                        cursor: pointer;
-                        color: $colorWhite;
-                    }
-                }
-            }
-        }
+    .section-7-after-hide{
+        height: 50px;
     }
+    // hide contact block styles
+    // section 7 / intereesting events
+    // .interest-events{
+    //     @include flex-justify(center);
+    //     .event-div{
+    //         max-width: 667px;
+    //         width: 100%;
+    //         padding: 20px 0 40px 0;
+    //         @include flex-justify(center);
+    //         flex-direction: column;
+    //         text-align: center;
+    //         p{
+    //             font-family: $firago-semibold;
+    //             color: $colorWhite;
+    //             font-size: 16px;
+    //             letter-spacing: -0.16px;
+    //             margin-bottom: 21px;
+    //         }
+    //         .form-mail{
+    //             form{
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 #email{
+    //                     outline: none;
+    //                     width: 368px;
+    //                     background-color: #EBEBEB;
+    //                     border: 1px solid #EBEBEB;
+    //                     color: black;
+    //                     padding-left: 15px;
+    //                     margin-right: 2%;
+    //                     border-radius: 4px;
+    //                 }
+    //                 .follow{
+    //                     width: 144px;
+    //                     height: 48px;
+    //                     background-color: transparent;
+    //                     border: 1px solid $colorWhite;
+    //                     border-radius: 4px;
+    //                     cursor: pointer;
+    //                     color: $colorWhite;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     // footer
     footer{
         text-align: center;
