@@ -3,6 +3,8 @@
 // MODAL
 body{
     background-color: $darkbluebg;
+    background-image: url(../assets/images/snow-bg.svg);
+    background-size: cover;
     #menu-div{
         height: 90%;
         display: none;
@@ -326,51 +328,54 @@ body{
             }
         }
     }
-
-    // section 7 / intereesting events
-    .interest-events{
-        @include flex-justify(center);
-        .event-div{
-            max-width: 667px;
-            width: 100%;
-            padding: 20px 0 40px 0;
-            @include flex-justify(center);
-            flex-direction: column;
-            text-align: center;
-            p{
-                font-family: $firago-semibold;
-                color: $colorWhite;
-                font-size: 16px;
-                letter-spacing: -0.16px;
-                margin-bottom: 21px;
-            }
-            .form-mail{
-                form{
-                    display: flex;
-                    justify-content: center;
-                    #email{
-                        outline: none;
-                        width: 368px;
-                        background-color: #EBEBEB;
-                        border: 1px solid #EBEBEB;
-                        color: black;
-                        padding-left: 15px;
-                        margin-right: 2%;
-                        border-radius: 4px;
-                    }
-                    .follow{
-                        width: 144px;
-                        height: 48px;
-                        background-color: transparent;
-                        border: 1px solid $colorWhite;
-                        border-radius: 4px;
-                        cursor: pointer;
-                        color: $colorWhite;
-                    }
-                }
-            }
-        }
+    .section-7-after-hide{
+        height: 50px;
     }
+    // hide contact block styles
+    // section 7 / intereesting events
+    // .interest-events{
+    //     @include flex-justify(center);
+    //     .event-div{
+    //         max-width: 667px;
+    //         width: 100%;
+    //         padding: 20px 0 40px 0;
+    //         @include flex-justify(center);
+    //         flex-direction: column;
+    //         text-align: center;
+    //         p{
+    //             font-family: $firago-semibold;
+    //             color: $colorWhite;
+    //             font-size: 16px;
+    //             letter-spacing: -0.16px;
+    //             margin-bottom: 21px;
+    //         }
+    //         .form-mail{
+    //             form{
+    //                 display: flex;
+    //                 justify-content: center;
+    //                 #email{
+    //                     outline: none;
+    //                     width: 368px;
+    //                     background-color: #EBEBEB;
+    //                     border: 1px solid #EBEBEB;
+    //                     color: black;
+    //                     padding-left: 15px;
+    //                     margin-right: 2%;
+    //                     border-radius: 4px;
+    //                 }
+    //                 .follow{
+    //                     width: 144px;
+    //                     height: 48px;
+    //                     background-color: transparent;
+    //                     border: 1px solid $colorWhite;
+    //                     border-radius: 4px;
+    //                     cursor: pointer;
+    //                     color: $colorWhite;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     // footer
     footer{
         text-align: center;
@@ -414,3 +419,62 @@ body{
         }
     }
 }
+// chatbot 
+.chatbot__container {
+    bottom: 70px;
+    right: 70px;
+    bottom: 11vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 9999;
+    .chatbot__btn {
+    //   background: url('../assets/images/chat.svg') no-repeat center;
+    //   background-size: cover;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 6px #DFDFDF29;
+    border-radius: 15px;
+      position: relative;
+      height: 113px;
+      width: 113px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      cursor: pointer;
+      .chatbot__close__btn {
+        background: url('../assets/images/closechat.png') no-repeat center;
+        background-size: contain;
+        height: 38px;
+        width: 38px;
+      }
+      .chatbot__open__btn {
+        background: url('../assets/images/msgicon.svg') no-repeat center;
+        background-size: contain;
+        height: 60px;
+        width: 60px;
+      }
+      .chatbot__btn::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+
+
+  
+
+  
+
+  
