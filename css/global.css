@@ -100,7 +100,7 @@ table {
 
 body {
   background-color: #131931;
-  background-image: url(/../assets/images/snowflakes.png);
+  background-image: url(../assets/images/snowflakes.png);
   background-size: cover;
   /* HEADER */
   /* /HEADER */
@@ -167,7 +167,7 @@ body #menu-div .container .social ul li {
 }
 
 body header {
-  height: 190px;
+  height: 140px;
 }
 
 body header .container {
