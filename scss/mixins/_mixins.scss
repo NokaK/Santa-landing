@@ -29,8 +29,12 @@
     font-size: 20px;
     font-family: $firago-semibold;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0px 20px #ffffffb4;
+    box-shadow: 0px 0px 10px #ffffffb4;
     border: 0;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+        box-shadow: 0px 0px 20px #ffffffb4;
+    }
 }
