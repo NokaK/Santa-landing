@@ -100,6 +100,8 @@ table {
 
 body {
   background-color: #131931;
+  background-image: url(../assets/images/snow-bg.svg);
+  background-size: cover;
   /* HEADER */
   /* /HEADER */
 }
@@ -265,11 +267,18 @@ body .hero .wrapper .content button {
   font-size: 20px;
   font-family: "FiraGO SemiBold";
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
-          box-shadow: 0px 0px 20px #ffffffb4;
+  -webkit-box-shadow: 0px 0px 10px #ffffffb4;
+          box-shadow: 0px 0px 10px #ffffffb4;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body .hero .wrapper .content button:hover {
+  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
+          box-shadow: 0px 0px 20px #ffffffb4;
 }
 
 body .section-2 {
@@ -448,11 +457,18 @@ body .ask-me-anything .ask-me-container .button-container button {
   font-size: 20px;
   font-family: "FiraGO SemiBold";
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
-          box-shadow: 0px 0px 20px #ffffffb4;
+  -webkit-box-shadow: 0px 0px 10px #ffffffb4;
+          box-shadow: 0px 0px 10px #ffffffb4;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body .ask-me-anything .ask-me-container .button-container button:hover {
+  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
+          box-shadow: 0px 0px 20px #ffffffb4;
 }
 
 body .bad-habbits {
@@ -570,11 +586,18 @@ body .holiday .cont .button-container button {
   font-size: 20px;
   font-family: "FiraGO SemiBold";
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
-          box-shadow: 0px 0px 20px #ffffffb4;
+  -webkit-box-shadow: 0px 0px 10px #ffffffb4;
+          box-shadow: 0px 0px 10px #ffffffb4;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body .holiday .cont .button-container button:hover {
+  -webkit-box-shadow: 0px 0px 20px #ffffffb4;
+          box-shadow: 0px 0px 20px #ffffffb4;
 }
 
 body .holiday .cont .line-holiday-left, body .holiday .cont .line-holiday-right {
@@ -650,5 +673,66 @@ body footer .socials .item {
 
 body footer .socials .item i {
   margin-right: 10px;
+}
+
+.chatbot__container {
+  bottom: 70px;
+  right: 70px;
+  bottom: 11vh;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 9999;
+}
+
+.chatbot__container .chatbot__btn {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 3px 3px 6px #DFDFDF29;
+          box-shadow: 3px 3px 6px #DFDFDF29;
+  border-radius: 15px;
+  position: relative;
+  height: 113px;
+  width: 113px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chatbot__container .chatbot__btn .chatbot__close__btn {
+  background: url("../assets/images/closechat.png") no-repeat center;
+  background-size: contain;
+  height: 38px;
+  width: 38px;
+}
+
+.chatbot__container .chatbot__btn .chatbot__open__btn {
+  background: url("../assets/images/msgicon.svg") no-repeat center;
+  background-size: contain;
+  height: 60px;
+  width: 60px;
+}
+
+.chatbot__container .chatbot__btn .chatbot__btn::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 /*# sourceMappingURL=global.css.map */
