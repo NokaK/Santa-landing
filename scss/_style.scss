@@ -3,7 +3,7 @@
 // MODAL
 body{
     background-color: $darkbluebg;
-    background-image: url(../assets/images/snow-bg.svg);
+    background-image: url(../assets/images/snowflakes.png);
     background-size: cover;
     #menu-div{
         height: 90%;
@@ -189,6 +189,7 @@ body{
                 top: -40px;
             }
             ul {
+                background: $darkbluebg;
                 li {
                     @include ff-fs-fw ($firago-reg, 18px, 300);
                     &:not(:last-child) {
@@ -257,6 +258,7 @@ body{
             @include flex-justify('');
             flex-direction: row-reverse;
             .text{
+                background: $darkbluebg;
                 color: $colorWhite;
                 width: 60%;
                 text-align: right;
@@ -327,9 +329,6 @@ body{
                 margin-bottom: 50px;
             }
         }
-    }
-    .section-7-after-hide{
-        height: 50px;
     }
     // hide contact block styles
     // section 7 / intereesting events

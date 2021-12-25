@@ -100,7 +100,7 @@ table {
 
 body {
   background-color: #131931;
-  background-image: url(../assets/images/snow-bg.svg);
+  background-image: url(../assets/images/snowflakes.png);
   background-size: cover;
   /* HEADER */
   /* /HEADER */
@@ -372,6 +372,10 @@ body .cyber-profile .profile .line-profile {
   top: -40px;
 }
 
+body .cyber-profile .profile ul {
+  background: #131931;
+}
+
 body .cyber-profile .profile ul li {
   font-family: "FiraGO Regular";
   font-size: 18px;
@@ -499,6 +503,7 @@ body .bad-habbits .bad-habbits-container {
 }
 
 body .bad-habbits .bad-habbits-container .text {
+  background: #131931;
   color: #ffffff;
   width: 60%;
   text-align: right;
@@ -617,10 +622,6 @@ body .holiday .hoiday-div h6 {
   line-height: 36px;
   letter-spacing: -0.6px;
   margin-bottom: 50px;
-}
-
-body .section-7-after-hide {
-  height: 50px;
 }
 
 body footer {
