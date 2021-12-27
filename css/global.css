@@ -100,8 +100,9 @@ table {
 
 body {
   background-color: #131931;
-  background-image: url(../assets/images/snowflakes.png);
+  background-image: url(./../assets/images/snowflakes.png);
   background-size: cover;
+  background-position: 0 -45px;
   /* HEADER */
   /* /HEADER */
 }
